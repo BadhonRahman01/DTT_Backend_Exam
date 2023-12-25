@@ -17,12 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     $data = json_decode(file_get_contents("php://input"), true);
     $facility_id = $data['facility_id'];
 
-    // Delete from Facility table
-    $query = "DELETE FROM Facility WHERE facility_id = $facility_id";
+    // Delete from FacilityTags junction table first
+    $query = "DELETE FROM FacilityTags WHERE facility_id = $facility_id";
     $conn->query($query);
 
-    // Delete from FacilityTags junction table
-    $query = "DELETE FROM FacilityTags WHERE facility_id = $facility_id";
+    // Delete from Facility table
+    $query = "DELETE FROM Facility WHERE facility_id = $facility_id";
     $conn->query($query);
 
     echo json_encode(['message' => 'Facility deleted successfully']);
