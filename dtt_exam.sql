@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 25, 2023 at 08:45 AM
+-- Generation Time: Dec 25, 2023 at 09:31 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.2.0
 
@@ -152,7 +152,7 @@ ALTER TABLE `tag`
 -- AUTO_INCREMENT for table `facility`
 --
 ALTER TABLE `facility`
-  MODIFY `facility_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `facility_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `location`

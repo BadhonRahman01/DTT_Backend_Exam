@@ -1,0 +1,36 @@
+{
+    "name": "johnkary/php-skeleton",
+    "description": "Base project skeleton for a PHP 8.1+ project",
+    "keywords": ["PHP", "example", "project", "skeleton"],
+    "homepage": "https://github.com/johnkary/skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Kary",
+            "email": "john@johnkary.net",
+            "homepage": "https://johnkary.net",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.1",
+        "phpunit/phpunit": "^9.6",
+        "symfony/console": "^5.2"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    }
+}
