@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Oulu Facility\",\r\n    \"creation_date\": \"2023-12-25\",\r\n    \"location_id\": 3,\r\n    \"tags\": [1, 2, 3]\r\n}",
+					"raw": "{\r\n    \"name\": \"Tampere Facility\",\r\n    \"creation_date\": \"2024-01-05\",\r\n    \"location_id\": 3,\r\n    \"tags\": [1, 2, 3]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,14 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/create.php",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/create.php",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"create.php"
 					]
@@ -42,14 +41,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/read.php",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/read.php",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"read.php"
 					]
@@ -63,14 +61,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/read.php?facility_id=5",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/read.php?facility_id=5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"read.php"
 					],
@@ -91,7 +88,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"facility_id\": 10,\r\n    \"name\": \"Oulu Facility Updated\",\r\n    \"creation_date\": \"2023-12-25\",\r\n    \"location_id\": 2,\r\n    \"tags\": [2, 3]\r\n}",
+					"raw": "{\r\n    \"facility_id\": 6,\r\n    \"name\": \"Helsinki Facility Updated\",\r\n    \"creation_date\": \"2024-01-05\",\r\n    \"location_id\": 2,\r\n    \"tags\": [2, 3]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -99,14 +96,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/update.php",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/update.php",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"update.php"
 					]
@@ -121,7 +117,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"facility_id\": 10\r\n}",
+					"raw": "{\r\n    \"facility_id\": 8\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -129,14 +125,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/delete.php",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/delete.php",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"delete.php"
 					]
@@ -150,14 +145,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/web_backend_test_catering_api/www/facility/read.php?search=hel",
+					"raw": "http://localhost/web_backend_test_catering_api/facility/read.php?search=hel",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
 						"web_backend_test_catering_api",
-						"www",
 						"facility",
 						"read.php"
 					],
