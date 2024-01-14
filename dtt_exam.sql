@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 05, 2024 at 11:10 AM
+-- Generation Time: Jan 14, 2024 at 06:43 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.2.0
 
@@ -42,7 +42,8 @@ INSERT INTO `facility` (`facility_id`, `name`, `creation_date`, `location_id`) V
 (5, 'Sydney Facility', '2023-12-19', 1),
 (6, 'Helsinki Facility Updated', '2024-01-05', 2),
 (7, 'Amsterdam Facility', '2023-12-18', 2),
-(11, 'Tampere Facility', '2024-01-05', 3);
+(11, 'Tampere Facility', '2024-01-05', 3),
+(12, 'Turku Facility', '2024-01-14', 2);
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,9 @@ INSERT INTO `facilitytags` (`facility_id`, `tag_id`) VALUES
 (7, 3),
 (11, 1),
 (11, 2),
-(11, 3);
+(11, 3),
+(12, 1),
+(12, 3);
 
 -- --------------------------------------------------------
 
@@ -152,7 +155,7 @@ ALTER TABLE `tag`
 -- AUTO_INCREMENT for table `facility`
 --
 ALTER TABLE `facility`
-  MODIFY `facility_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `facility_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `location`

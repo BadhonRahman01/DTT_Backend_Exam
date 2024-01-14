@@ -33,4 +33,4 @@ $router->get($basePath . '/facilities/{id}', 'FacilityController@readOne');
 $router->get($basePath . '/facilities', 'FacilityController@readAll');
 $router->put($basePath . '/facilities/{id}', 'FacilityController@update');
 $router->delete($basePath . '/facilities/{id}', 'FacilityController@delete');
-
+$router->get($basePath . '/facilitysearch/{search}', 'FacilityController@facilitysearch');
