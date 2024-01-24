@@ -71,7 +71,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Lahti Facility\",\r\n    \"creation_date\": \"2024-01-14\",\r\n    \"location_id\": 1,\r\n    \"tags\": [1, 3]\r\n}",
+					"raw": "{\r\n    \"name\": \"Stockholm Facility\",\r\n    \"creation_date\": \"2024-01-24\",\r\n    \"location_id\": 1,\r\n    \"tags\": [1, 3]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -98,7 +98,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/facilities/14",
+					"raw": "http://localhost:8000/facilities/15",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -106,7 +106,7 @@
 					"port": "8000",
 					"path": [
 						"facilities",
-						"14"
+						"15"
 					]
 				}
 			},
@@ -119,7 +119,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Turku Facility\",\r\n    \"location_id\": 2\r\n}",
+					"raw": "{\r\n    \"name\": \"Turku Facility Updated\",\r\n    \"location_id\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -147,7 +147,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/facilitysearch/ams",
+					"raw": "http://localhost:8000/facilitysearch/turku",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -155,7 +155,7 @@
 					"port": "8000",
 					"path": [
 						"facilitysearch",
-						"ams"
+						"turku"
 					]
 				}
 			},

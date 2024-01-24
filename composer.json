@@ -1,14 +1,13 @@
 {
-    "name": "acer/web_backend_test_catering_api",
-    "description": "DTT Backend Test",
-    "type": "project",
-    "authors": [
-        {
-            "name": "BadhonRahman01",
-            "email": "badhon.rahman184@gmail.com"
-        }
-    ],
-    "require": {
-        "bramus/router": "^1.6"
+  "name": "dttmultimedia/web_backend_test_catering_api",
+  "description": "PHP skeleton project for the DTT back end assessment – Catering API",
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/"
     }
+  },
+  "require": {
+    "bramus/router": "^1.6",
+    "ext-pdo": "*"
+  }
 }

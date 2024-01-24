@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+
+use App\Plugins\Db\Connection\Connection;
+
 use PDO;
 
 
@@ -9,9 +12,17 @@ class FacilityController
 {
     private $pdo; // PDO object to handle database connection
 
-    // Constructor to initialize the database connection
-    public function __construct($host, $dbname, $username, $password) {
+    //Constructor to initialize the database connection
+    public function __construct() {
         try {
+            $config = require __DIR__ . '/../../config/config.php';
+
+            $databaseConfig = $config['db'] ?? null;
+            $host = $databaseConfig['host'];
+            $dbname = $databaseConfig['database'];
+            $username = $databaseConfig['username'];
+            $password = $databaseConfig['password'];
+
             $this->pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
